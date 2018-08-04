@@ -11,7 +11,7 @@ from googletrans import Translator
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pytz, urllib, urllib3, urllib.parse, traceback, atexit, subprocess
 
-ririn = LINE("EtKtkL176FshhP9PKaV6.7kqscP17dKQEF08Bg5AKnG.XNdQINxpbD1oN9msScvYFDrCkFFwTtDiaAH4+0uKmNg=")
+ririn  = LINE("EvS9lttNDwMWjDZE9vSd.NWNpYXFqn/ktA3uB2DqoRq.q165sQJHWcgV9tnpYp0JNVGeU92LjwZGpyrKrYfgVl4=")
 #ririn = LINE("")
 ririnMid = ririn.profile.mid
 ririnProfile = ririn.getProfile()
@@ -19,12 +19,12 @@ ririnSettings = ririn.getSettings()
 ririnPoll = OEPoll(ririn)
 botStart = time.time()
 
-print ("╔═════════════════════════\n║╔════════════════════════\n║╠❂➣ DNA BERHASIL LOGIN\n║╚════════════════════════\n╚═════════════════════════")
+print ("╔═════════════════════════\n║╔════════════════════════\n║╠❂➣ sᴇᴘʀɪ BERHASIL LOGIN\n║╚════════════════════════\n╚═════════════════════════")
 
 msg_dict = {}
 
 wait = {
-    "autoAdd": True,
+    "autoAdd": False,
     "autoJoin": True,
     "autoLeave": False,
     "autoRead": False,
@@ -331,7 +331,7 @@ def helpmessage():
     else:
         key = ''
     helpMessage =   "╔════════════════════╗" + "\n" + \
-                    "                    ✰ ᴅɴᴀ ʙᴏᴛ ✰" + "\n" + \
+                    "                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰" + "\n" + \
                     "╚════════════════════╝" + "\n" + \
                     "╔════════════════════╗" + "\n" + \
                     "                ◄]·✪·Public·✪·[►" + "\n" + \
@@ -349,9 +349,9 @@ def helpmessage():
                     "╠❂➣ " + key + "ɢʀᴏᴜᴘɪᴅ" + "\n" + \
                     "╠❂➣ " + key + "ɢʀᴏᴜᴘɴᴀᴍᴇ" + "\n" + \
                     "╠❂➣ " + key + "ɢʀᴏᴜᴘᴘɪᴄᴛᴜʀᴇ" + "\n" + \
-                    "╠❂➣ " + key + "ᴍᴇɴᴛɪᴏɴ" + "\n" + \
-                    "╠❂➣ " + key + "ʟᴜʀᴋɪɴɢ「ᴏɴ/ᴏғғ/ʀᴇsᴇᴛ」" + "\n" + \
-                    "╠❂➣ " + key + "ʟᴜʀᴋɪɴɢ" + "\n" + \
+                    "╠❂➣ " + key + "ᴛᴀɢᴀʟʟ" + "\n" + \
+                    "╠❂➣ " + key + "ᴄᴄᴛᴠ「ᴏɴ/ᴏғғ/ʀᴇsᴇᴛ」" + "\n" + \
+                    "╠❂➣ " + key + "ᴄɪᴅᴜᴋ" + "\n" + \
                     "╠════════════════════╗" + "\n" + \
                     "                ◄]·✪·Admin·✪·[►" + "\n" + \
                     "╠════════════════════╝" + "\n" + \
@@ -415,7 +415,7 @@ def helpmessage():
                     "               ᴄʀᴇᴅɪᴛs ʙʏ : ©ᴅ̶ᴇ̶ᴇ̶ ✯" + "\n" + \
                     "╚════════════════════╝" + "\n" + \
                     "╔════════════════════╗" + "\n" + \
-                    "                   ✰ ᴅɴᴀ ʙᴏᴛ  ✰" + "\n" + \
+                    "                   ✰ sᴇᴘʀɪ ʙᴏᴛ  ✰" + "\n" + \
                     "╚════════════════════╝"
     return helpMessage
 
@@ -425,7 +425,7 @@ def helptexttospeech():
     else:
         key = ''
     helpTextToSpeech =  "╔════════════════════╗" + "\n" + \
-                        "                    ✰ ᴅɴᴀ ʙᴏᴛ ✰" + "\n" + \
+                        "                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "╔════════════════════╗" + "\n" + \
                         "          ◄]·✪·ᴛᴇxᴛᴛᴏsᴘᴇᴇᴄʜ·✪·[►" + "\n" + \
@@ -485,7 +485,7 @@ def helptexttospeech():
                         "               ᴄʀᴇᴅɪᴛs ʙʏ : ©ᴅ̶ᴇ̶ᴇ̶ ✯" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "╔════════════════════╗" + "\n" + \
-                        "                    ✰ ᴅɴᴀ ʙᴏᴛ ✰" + "\n" + \
+                        "                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "ᴄᴏɴᴛᴏʜ : " + key + "sᴀʏ-ɪᴅ ʀɪʀɪɴ"
     return helpTextToSpeech
@@ -496,7 +496,7 @@ def helptranslate():
     else:
         key = ''
     helpTranslate = "╔════════════════════╗" + "\n" + \
-                        "                     ✰ ᴅɴᴀ ʙᴏᴛ ✰" + "\n" + \
+                        "                     ✰ sᴇᴘʀɪ ʙᴏᴛ ✰" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "╔════════════════════╗" + "\n" + \
                         "             ◄]·✪·ᴛʀᴀɴsʟᴀᴛᴇ·✪·[►" + "\n" + \
@@ -611,7 +611,7 @@ def helptranslate():
                         "              ᴄʀᴇᴅɪᴛs ʙʏ : ©ᴅ̶ᴇ̶ᴇ̶ ✯" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "╔════════════════════╗" + "\n" + \
-                        "                    ✰ ᴅɴᴀ ʙᴏᴛ ✰" + "\n" + \
+                        "                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰" + "\n" + \
                         "╚════════════════════╝" + "\n" + \
                         "ᴄᴏɴᴛᴏʜ : " + key + "ᴛʀ-ɪᴅ ʀɪʀɪɴ"
     return helpTranslate
@@ -626,7 +626,7 @@ def ririnBot(op):
             print ("[ 5 ] Add Contact")
             if wait["autoAdd"] == True:
                 ririn.findAndAddContactsByMid(op.param1)
-            ririn.sendMessage(to, "Halo, ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅ ᴍᴇ \nᴅɴᴀ ʙᴏᴛ \nᴏᴘᴇɴ ᴏʀᴅᴇʀ sᴇʟғʙᴏᴛ ᴏɴʟʏ\nsᴇʟғʙᴏᴛ + ᴀssɪsᴛ\nʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ\nᴀʟʟ ʙᴏᴛ ᴘʏᴛʜᴏɴ з \nᴍɪɴᴀᴛ ᴘᴄ ᴀᴋᴜɴ ᴅɪ ʙᴀᴡᴀʜ \nᴄʀᴇᴀᴛᴏʀ line.me/ti/p/ppgIZ0JLDW")
+            ririn.sendMessage(to, "Halo, ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅ ᴍᴇ \nsᴇᴘʀɪ ʙᴏᴛ \nᴏᴘᴇɴ ᴏʀᴅᴇʀ sᴇʟғʙᴏᴛ ᴏɴʟʏ\nsᴇʟғʙᴏᴛ + ᴀssɪsᴛ\nʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ\nᴀʟʟ ʙᴏᴛ ᴘʏᴛʜᴏɴ з \nᴍɪɴᴀᴛ ᴘᴄ ᴀᴋᴜɴ ᴅɪ ʙᴀᴡᴀʜ \nᴄʀᴇᴀᴛᴏʀ line.me/ti/p/ppgIZ0JLDW")
 
         if op.type == 13:
             print ("[ 13 ] Invite Into Group")
@@ -642,21 +642,21 @@ def ririnBot(op):
         if op.type == 15:
         	dan = ririn.getContact(op.param2)
         	tgb = ririn.getGroup(op.param1)
-        	ririn.sendMessage(op.param1, "ɴᴀʜ ᴋᴀɴ ʙᴀᴘᴇʀ 「{}」, ɢᴀᴋ ᴜsᴀʜ ʙᴀʟɪᴋ ᴅɪ {} ʟᴀɢɪ ʏᴀ\nsᴇʟᴀᴍᴀᴛ ᴊᴀʟᴀɴ ᴅᴀɴ sᴇᴍᴏɢᴀʜ ᴛᴇɴᴀɴɢ ᴅɪʟᴜᴀʀ sᴀɴᴀ 😘😘😘".format(str(dan.displayName),str(tgb.name)))
+        	ririn.sendMessage(op.param1, "ɴᴀʜ ᴋᴀɴ ʙᴀᴘᴇʀ 「{}」, {} \nᴅᴀsᴀʀ ᴊᴏɴᴇs ᴊᴀᴍᴀɴ ɴᴏᴡ 🙄".format(str(dan.displayName),str(tgb.name)))
         	ririn.sendContact(op.param1, op.param2)
         	ririn.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
         	
         if op.type == 17:
         	dan = ririn.getContact(op.param2)
         	tgb = ririn.getGroup(op.param1)
-        	sendMention(op.param1, "ʜᴏʟᴀ @!         ,\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ {} \nᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ᴄʜᴇᴄᴋ ɴᴏᴛᴇ ʏᴀ \nᴀᴡᴀs ᴋᴀʟᴀᴜ ʙᴀᴘᴇʀᴀɴ 😘😘😘".format(str(tgb.name)),[op.param2])
+        	sendMention(op.param1, "ʜᴏʟᴀ @!         ,\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ {} \nᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ᴄʜᴇᴄᴋ ɴᴏᴛᴇ ʏᴀ \nsᴀʟᴋᴇɴ ʙʏ. sᴇᴘʀɪ".format(str(tgb.name)),[op.param2])
         	ririn.sendContact(op.param1, op.param2)
         	ririn.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
 
         if op.type in [22, 24]:
             print ("[ 22 And 24 ] NOTIFIED INVITE INTO ROOM & NOTIFIED LEAVE ROOM")
             if wait["autoLeave"] == True:
-                sendMention(op.param1, "ᴡᴏʏ ᴋɴᴛʟᴏ @!         ,\nɴɢᴀᴘᴀɪɴ ɪɴᴠɪᴛᴇ ɢᴡ")
+                sendMention(op.param1, "ᴡᴏʏ  @!         ,\nɪᴢɪɴ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ɪɴᴠɪᴛᴇ")
                 ririn.leaveRoom(op.param1)
 
         if op.type == 25:
@@ -813,7 +813,7 @@ def ririnBot(op):
                                     else: ret_ += "\n╠❂➣ [ ᴏғғ ] sᴇᴛ ᴋᴇʏ 「⚫」"
                                     if wait["unsendMessage"] == True: ret_ += "\n╠❂➣ [ ᴏɴ ] ᴜɴsᴇɴᴅ ᴍsɢ 「⚪」"
                                     else: ret_ += "\n╠❂➣ [ ᴏғғ ] ᴜɴsᴇɴᴅ ᴍsɢ 「⚫」"
-                                    ret_ += "\n╚═════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]═════╝"
+                                    ret_ += "\n╚═════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]═════╝"
                                     ririn.sendMessage(to, str(ret_))
                                 except Exception as e:
                                     ririn.sendMessage(msg.to, str(e))
@@ -828,12 +828,12 @@ def ririnBot(op):
                                     else: ret_ += "\n╠❂➣ [ ᴏғғ ] ᴘʀᴏᴛᴇᴄᴛ ɪɴᴠɪᴛᴇ 「🔓」"
                                     if wait["Protectjoin"] == True: ret_ += "\n╠❂➣ [ ᴏɴ ] ᴘʀᴏᴛᴇᴄᴛ ᴊᴏɪɴ 「🔒」"
                                     else: ret_ += "\n╠❂➣ [ ᴏғғ ] ᴘʀᴏᴛᴇᴄᴛ ᴊᴏɪɴ 「🔓」"
-                                    ret_ += "\n╚═════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]═════╝"
+                                    ret_ += "\n╚═════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]═════╝"
                                     ririn.sendMessage(to, str(ret_))
                                 except Exception as e:
                                     ririn.sendMessage(msg.to, str(e))
 # Pembatas Script #
-                            elif cmd == "crash":
+                            elif cmd == "virus":
                                 ririn.sendContact(to, "u1f41296217e740650e0448b96851a3e2',")
                             elif cmd.startswith("changename:"):
                                 sep = text.split(" ")
@@ -1054,7 +1054,7 @@ def ririnBot(op):
                                 ret_ += "\n╠❂➣ ᴘᴇɴᴅɪɴɢ : {}".format(gPending)
                                 ret_ += "\n╠❂➣ ǫʀ ɢʀᴏᴜᴘ : {}".format(gQr)
                                 ret_ += "\n╠❂➣ ᴛɪᴄᴋᴇᴛ ɢʀᴏᴜᴘ : {}".format(gTicket)
-                                ret_ += "\n╚═════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]═════╝"
+                                ret_ += "\n╚═════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]═════╝"
                                 ririn.sendMessage(to, str(ret_))
                                 ririn.sendImageWithURL(to, path)
                             elif cmd == 'memberlist':
@@ -1086,15 +1086,15 @@ def ririnBot(op):
                                     if to not in wait["changeGroupPicture"]:
                                         wait["changeGroupPicture"].append(to)
                                     ririn.sendMessage(to, "sᴇɴᴅ ᴘɪᴄᴛᴜʀᴇ")
-                            elif cmd == 'mention':
+                            elif cmd == 'tagall':
                                 group = ririn.getGroup(msg.to)
                                 nama = [contact.mid for contact in group.members]
-                                k = len(nama)//100
+                                k = len(nama)//19
                                 for a in range(k+1):
                                     txt = u''
                                     s=0
                                     b=[]
-                                    for i in group.members[a*100 : (a+1)*100]:
+                                    for i in group.members[a*19 : (a+1)*19]:
                                         b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                                         s += 7
                                         txt += u'@Zero \n'
@@ -1120,7 +1120,7 @@ def ririnBot(op):
                             		ririn.sendMessage(msg.to,"sɪᴅᴇʀ sᴇᴛ ᴛᴏ ᴏғғ")
                             	else:
                             		ririn.sendMessage(msg.to,"sɪᴅᴇʀ ɴᴏᴛ sᴇᴛ")           
-                            elif cmd == "lurking on":
+                            elif cmd == "cctv on":
                                 tz = pytz.timezone("Asia/Makassar")
                                 timeNow = datetime.now(tz=tz)
                                 day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1144,7 +1144,7 @@ def ririnBot(op):
                                     read['readMember'][receiver] = ""
                                     read['readTime'][receiver] = readTime
                                     read['ROM'][receiver] = {}
-                                    ririn.sendMessage(receiver,"ʟᴜʀᴋɪɴɢ sᴇᴛ ᴏɴ")
+                                    ririn.sendMessage(receiver,"CCTV sᴇᴛ ᴏɴ")
                                 else:
                                     try:
                                         del read['readPoint'][receiver]
@@ -1157,7 +1157,7 @@ def ririnBot(op):
                                     read['readTime'][receiver] = readTime
                                     read['ROM'][receiver] = {}
                                     ririn.sendMessage(receiver,"sᴇᴛ ʀᴇᴀᴅɪɴɢ ᴘᴏɪɴᴛ : \n" + readTime)
-                            elif cmd == "lurking off":
+                            elif cmd == "cctv off":
                                 tz = pytz.timezone("Asia/Makassar")
                                 timeNow = datetime.now(tz=tz)
                                 day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1171,7 +1171,7 @@ def ririnBot(op):
                                     if bln == str(k): bln = bulan[k-1]
                                 readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
                                 if receiver not in read['readPoint']:
-                                    ririn.sendMessage(receiver,"ʟᴜʀᴋɪɴɢ sᴇᴛ ᴏғғ")
+                                    ririn.sendMessage(receiver,"CCTV sᴇᴛ ᴏғғ")
                                 else:
                                     try:
                                         del read['readPoint'][receiver]
@@ -1181,7 +1181,7 @@ def ririnBot(op):
                                         pass
                                     ririn.sendMessage(receiver,"ᴅᴇʟᴇᴛᴇ ʀᴇᴀᴅɪɴɢ ᴘᴏɪɴᴛ : \n" + readTime)
         
-                            elif cmd == "lurking reset":
+                            elif cmd == "cctv reset":
                                 tz = pytz.timezone("Asia/Makassar")
                                 timeNow = datetime.now(tz=tz)
                                 day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1210,7 +1210,7 @@ def ririnBot(op):
                                 else:
                                     ririn.sendMessage(msg.to, "ʟᴜʀᴋɪɴɢ ɴᴏᴛ ᴀᴋᴛɪᴠᴇ, ᴄᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ʀᴇsᴇᴛ")
                                     
-                            elif cmd == "lurking":
+                            elif cmd == "ciduk":
                                 tz = pytz.timezone("Asia/Makassar")
                                 timeNow = datetime.now(tz=tz)
                                 day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1288,7 +1288,7 @@ def ririnBot(op):
                                     mc = "╔════[ ·✪·ᴍɪᴍɪᴄ ʟɪsᴛ·✪· ]════╗"
                                     for mi_d in wait["mimic"]["target"]:
                                         mc += "\n╠❂➣ "+ririn.getContact(mi_d).displayName
-                                    mc += "\n╚═════[  ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]═════╝"
+                                    mc += "\n╚═════[  ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]═════╝"
                                     ririn.sendMessage(msg.to,mc)
                                 
                             elif cmd.startswith("mimic"):
@@ -1346,7 +1346,7 @@ def ririnBot(op):
                                     ret_ += "\n╠❂➣ " + data[3]
                                     ret_ += "\n╠❂➣ " + data[4]
                                     ret_ += "\n╠❂➣ " + data[5]
-                                    ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                    ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                     ririn.sendMessage(msg.to, str(ret_))
                             elif cmd.startswith("checkweather "):
                                 try:
@@ -1367,7 +1367,7 @@ def ririnBot(op):
                                         ret_ += "\n╠════[ ᴛɪᴍᴇ sᴛᴀᴛᴜs ]"
                                         ret_ += "\n╠❂➣ ᴛᴀɴɢɢᴀʟ : " + datetime.strftime(timeNow,'%Y-%m-%d')
                                         ret_ += "\n╠❂➣ ᴊᴀᴍ : " + datetime.strftime(timeNow,'%H:%M:%S') + " ᴡɪʙ"
-                                        ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                        ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                         ririn.sendMessage(to, str(ret_))
                                 except Exception as error:
                                     logError(error)
@@ -1383,7 +1383,7 @@ def ririnBot(op):
                                         ret_ = "╔═══[ ʟᴏᴄᴀᴛɪᴏɴ sᴛᴀᴛᴜs ]"
                                         ret_ += "\n╠❂➣ ʟᴏᴄᴀᴛɪᴏɴ : " + data[0]
                                         ret_ += "\n╠❂➣  ɢᴏᴏɢʟᴇ ᴍᴀᴘs : " + link
-                                        ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                        ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                         ririn.sendMessage(to, str(ret_))
                                 except Exception as error:
                                     logError(error)
@@ -1515,7 +1515,7 @@ def ririnBot(op):
                                             ret_ += "\n╠❂➣ ᴀʟʙᴜᴍ : {}".format(str(data["result"]["album"]))
                                             ret_ += "\n╠❂➣ sɪᴢᴇ : {}".format(str(data["result"]["size"]))
                                             ret_ += "\n╠❂➣ ʟɪɴᴋ :  {}".format(str(data["result"]["mp3"][0]))
-                                            ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                            ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                             ririn.sendImageWithURL(to, str(data["result"]["img"]))
                                             ririn.sendMessage(to, str(ret_))
                                             ririn.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
@@ -1611,7 +1611,7 @@ def ririnBot(op):
                             ret_ += "\n╠❂➣ sᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋᴀɢᴇs ɪᴅ : {}".format(pkg_id)
                             ret_ += "\n╠❂➣ sᴛɪᴄᴋᴇʀ ᴠᴇʀsɪᴏɴ : {}".format(stk_ver)
                             ret_ += "\n╠❂➣ sᴛɪᴄᴋᴇʀ ᴜʀʟ : line://shop/detail/{}".format(pkg_id)
-                            ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                            ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                             ririn.sendMessage(to, str(ret_))
                     elif msg.contentType == 13:
                         if wait["checkContact"] == True:
@@ -1632,7 +1632,7 @@ def ririnBot(op):
                                 ret_ += "\n╠❂➣ ʙɪᴏ : {}".format(str(contact.statusMessage))
                                 ret_ += "\n╠❂➣ ɢᴀᴍʙᴀʀ ᴘʀᴏғɪʟᴇ : http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
                                 ret_ += "\n╠❂➣ ɢᴀᴍʙᴀʀ ᴄᴏᴠᴇʀ : {}".format(str(cover))
-                                ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                 ririn.sendMessage(to, str(ret_))
                             except:
                                 ririn.sendMessage(to, "ᴋᴏɴᴛᴀᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ")
@@ -1670,7 +1670,7 @@ def ririnBot(op):
                                 if "text" in msg.contentMetadata:
                                     text = "\n╠❂➣ ɴᴏᴛᴇ : {}".format(str(msg.contentMetadata["text"]))
                                     ret_ += text
-                                ret_ += "\n╚════[ ✯ ᴅɴᴀ ʙᴏᴛ ✯ ]"
+                                ret_ += "\n╚════[ ✯ sᴇᴘʀɪ ʙᴏᴛ ✯ ]"
                                 ririn.sendMessage(to, str(ret_))
                             except:
                                 ririn.sendMessage(to, "ɪɴᴠᴀʟɪᴅ ᴘᴏsᴛ")
@@ -1685,7 +1685,7 @@ def ririnBot(op):
                     ririn.sendChatChecked(msg._from,msg.id)
                     contact = ririn.getContact(msg._from)
                     cName = contact.displayName
-                    balas = ["╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ ᴅɴᴀ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nᴍᴏʜᴏɴ ᴍᴀᴀғ sᴀʏᴀ sᴇᴅᴀɴɢ sɪʙᴜᴋ, ɪɴɪ ᴀᴅᴀʟᴀʜ ᴘᴇsᴀɴ ᴏᴛᴏᴍᴀᴛɪs, ᴊɪᴋᴀ ᴀᴅᴀ ʏᴀɴɢ ᴘᴇɴᴛɪɴɢ ᴍᴏʜᴏɴ ʜᴜʙᴜɴɢɪ sᴀʏᴀ ɴᴀɴᴛɪ, ᴛᴇʀɪᴍᴀᴋᴀsɪʜ...","╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ ᴅɴᴀ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nsᴀʏᴀ ʟᴀɢɪ sɪʙᴜᴋ ʏᴀ ᴋᴀᴋ ᴊᴀɴɢᴀɴ ᴅɪɢᴀɴɢɢᴜ","╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ ᴅɴᴀ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nsᴀʏᴀ sᴇᴅᴀɴɢ ᴛɪᴅᴜʀ ᴋᴀᴋ"]
+                    balas = ["╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nᴍᴏʜᴏɴ ᴍᴀᴀғ sᴀʏᴀ sᴇᴅᴀɴɢ sɪʙᴜᴋ, ɪɴɪ ᴀᴅᴀʟᴀʜ ᴘᴇsᴀɴ ᴏᴛᴏᴍᴀᴛɪs, ᴊɪᴋᴀ ᴀᴅᴀ ʏᴀɴɢ ᴘᴇɴᴛɪɴɢ ᴍᴏʜᴏɴ ʜᴜʙᴜɴɢɪ sᴀʏᴀ ɴᴀɴᴛɪ, ᴛᴇʀɪᴍᴀᴋᴀsɪʜ...","╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nsᴀʏᴀ ʟᴀɢɪ sɪʙᴜᴋ ʏᴀ ᴋᴀᴋ ᴊᴀɴɢᴀɴ ᴅɪɢᴀɴɢɢᴜ","╔════════════════════╗\n                   「ᴀᴜᴛᴏ ʀᴇᴘʟʏ」\n                             ʙʏ:\n                    ✰ sᴇᴘʀɪ ʙᴏᴛ ✰\n╚════════════════════╝\n\nʜᴀʟʟᴏ 「" + cName + "」\nsᴀʏᴀ sᴇᴅᴀɴɢ ᴛɪᴅᴜʀ ᴋᴀᴋ"]
                     dee = "" + random.choice(balas)
                     ririn.sendImageWithURL(msg._from, "http://dl.profile.line-cdn.net{}".format(contact.picturePath))
                     ririn.sendMessage(msg._from,dee)
@@ -1753,7 +1753,7 @@ def ririnBot(op):
                                     	ririn.sendChatChecked(msg._from,msg.id)
                                     	contact = ririn.getContact(msg._from)
                                     	ririn.sendImageWithURL(msg._from, "http://dl.profile.line-cdn.net{}".format(contact.picturePath))
-                                    	sendMention(sender, "ᴏɪ ᴍʙʟᴏ @!      ,\nɴɢᴀᴘᴀɪɴ ᴛᴀɢ ᴛᴀɢ ɢᴡ", [sender])
+                                    	sendMention(sender, "ᴏɪ ᴍʙʟᴏ @!      ,\nᴄɪᴇ ᴊᴏᴍʙʟᴏ ᴛᴀɢ ɢᴜᴇ", [sender])
                                     	dee = "" + random.choice(balas)
                                     break
             except Exception as error:
